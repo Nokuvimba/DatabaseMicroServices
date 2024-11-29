@@ -39,4 +39,6 @@ public class Person {
     @NotBlank
     private String department;
 
+    public Person(long l, String nat, int i, String mail, String mr, String number, String lecturer, String engineering) {
+    }
 }
