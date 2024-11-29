@@ -40,4 +40,10 @@ public class PersonController {
         return new ResponseEntity<>("Person deleted successfully", HttpStatus.OK);
     }
 
+    @PutMapping("/{email}")
+    public ResponseEntity<String> updatePerson(@PathVariable String email, @RequestBody Person updatedPerson) throws PersonNotFoundException {
+        personService.updatePerson(email, updatedPerson);
+        return new ResponseEntity<>("Person updated successfully", HttpStatus.OK);
+    }
+
 }
