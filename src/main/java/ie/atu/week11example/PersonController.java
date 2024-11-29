@@ -34,6 +34,4 @@ public class PersonController {
         personService.savePerson(person);
         return new ResponseEntity<>("Person created successfully", HttpStatus.OK);
     }
-
-
 }
